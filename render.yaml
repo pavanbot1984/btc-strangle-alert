@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: btc-strangle-alert
+    runtime: python
+    plan: free
+    buildCommand: ""
+    startCommand: python btc_strangle_alert.py
