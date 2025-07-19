@@ -3,5 +3,5 @@ services:
     name: btc-strangle-alert
     runtime: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python btc_strangle_alert.py
