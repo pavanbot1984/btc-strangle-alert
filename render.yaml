@@ -1,8 +1,7 @@
 services:
   - type: worker
     name: btc-strangle-alert
-    runtime: python
+    env: python
     plan: free
-    pythonVersion: 3.11
-    buildCommand: pip install -r requirements.txt
-    startCommand: python btc_strangle_alert.py
+    buildCommand: pip3 install -r requirements.txt
+    startCommand: python3 btc_strangle_alert.py
